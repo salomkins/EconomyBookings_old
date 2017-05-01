@@ -183,8 +183,12 @@
   margin-right: 3px;
 }
 
-.phones__btn:focus, .phones__btn:hover, .lang__btn:focus, .lang__btn:hover, .currency__btn:focus, .currency__btn:hover, .login__btn:focus, .login__btn:hover {
+.phones__btn:focus, .lang__btn:focus, .currency__btn:focus, .login__btn:focus {
   background-color: #133f5c;
+}
+
+.phones__btn:focus + .dropdown, .lang__btn:focus + .dropdown, .currency__btn:focus + .dropdown, .login__btn:focus + .dropdown {
+  display: block;
 }
 
 .phones__label, .lang__label, .currency__label, .login__label {
@@ -236,4 +240,55 @@
 
 .login__btn {
   border: 1px solid #5f8aa6;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 25%);
+}
+
+.dropdown-wrapper {
+  position: relative;
+  background-color: #FFF;
+  border-radius: 3px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.dropdown-wrapper::before {
+  content: "";
+  position: absolute;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #FFF transparent;
+  border-style: solid;
+  left: 50%;
+  top: -6px;
+  margin-left: -6px;
+}
+
+.dropdown-row {
+  display: flex;
+  flex-direction: nowrap;
+  padding: 10px;
+}
+
+.col {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+  font-size: 16px;
+  width: 248px;
+  padding: 0 12px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.col:first-child {
+  border-left: 0;
+}
+
+.col:last-child {
+  border-right: 0;
 }

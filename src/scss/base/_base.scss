@@ -88,8 +88,11 @@
     border-radius: 3px;
     margin-right: 3px;
 
-    &:focus, &:hover {
+    &:focus {
       background-color: #133f5c;
+      & + .dropdown {
+        display: block;
+      }
     }
   }
 
