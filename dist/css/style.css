@@ -163,17 +163,26 @@
   }
 }
 
-.phones, .lang, .currency, .login {
+.currency,
+.lang,
+.login,
+.phones {
   position: relative;
   color: #FFF;
 }
 
-.phones__icon, .lang__icon, .currency__icon, .login__icon {
+.currency__icon,
+.lang__icon,
+.login__icon,
+.phones__icon {
   font-family: FontAwesome;
   font-size: 18px;
 }
 
-.phones__btn, .lang__btn, .currency__btn, .login__btn {
+.currency__btn,
+.lang__btn,
+.login__btn,
+.phones__btn {
   box-sizing: border-box;
   background: transparent;
   border: 0;
@@ -183,20 +192,32 @@
   margin-right: 3px;
 }
 
-.phones__btn:focus, .lang__btn:focus, .currency__btn:focus, .login__btn:focus {
+.currency__btn:focus,
+.lang__btn:focus,
+.login__btn:focus,
+.phones__btn:focus {
   background-color: #133f5c;
 }
 
-.phones__btn:focus + .dropdown, .lang__btn:focus + .dropdown, .currency__btn:focus + .dropdown, .login__btn:focus + .dropdown {
+.currency__btn:focus + .dropdown,
+.lang__btn:focus + .dropdown,
+.login__btn:focus + .dropdown,
+.phones__btn:focus + .dropdown {
   display: block;
 }
 
-.phones__label, .lang__label, .currency__label, .login__label {
+.currency__label,
+.lang__label,
+.login__label,
+.phones__label {
   font-family: open_sansregular;
   font-size: 13px;
 }
 
-.phones__caret, .lang__caret, .currency__caret, .login__caret {
+.currency__caret,
+.lang__caret,
+.login__caret,
+.phones__caret {
   font-family: FontAwesome;
   font-size: 13px;
   position: absolute;
@@ -246,7 +267,7 @@
   display: none;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 25%);
+  transform: translate(-50%, 5%);
 }
 
 .dropdown-wrapper {
@@ -291,4 +312,51 @@
 
 .col:last-child {
   border-right: 0;
+}
+
+.phoneslist--left,
+.phoneslist--right {
+  color: black;
+  cursor: pointer;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.phoneslist__item {
+  padding: 9px 0;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.phoneslist__flag {
+  float: left;
+  margin-top: 5px;
+  margin-right: 8px;
+}
+
+.phoneslist__country {
+  font-family: open_sanssemibold;
+  float: left;
+}
+
+.phoneslist__phone {
+  font-family: open_sansregular;
+  float: right;
+}
+
+.flag {
+  display: inline-block;
+  width: 14px;
+  height: 9px;
+  background: url("../img/flags.png") no-repeat;
+}
+
+.flag--pt {
+  background-position: 0 0;
+}
+
+.flag--lv {
+  background-position: 0 -18px;
 }

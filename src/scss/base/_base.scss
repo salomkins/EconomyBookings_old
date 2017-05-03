@@ -2,146 +2,142 @@
 @import "fonts";
 
 .wrapper {
-  max-width: 1024px;
-  margin: auto;
-  @media (max-width: 639px) {
-      width: auto;
-  }
+    max-width: 1024px;
+    margin: auto;
+    @media (max-width: 639px) {
+        width: auto;
+    }
 }
 
 .header {
-  background-color: #1a5880;
-  .wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 0 15px;
-  }
+    background-color: #1a5880;
 
+    .wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 15px;
+    }
 }
 
 .logo {
-  padding: 17px 20px 17px 0;
-  &__img {
-    width: 172px;
-    height: 26px;
-  }
+    padding: 17px 20px 17px 0;
+
+    &__img {
+        width: 172px;
+        height: 26px;
+    }
 }
 
 .lovers {
-  padding: 0 20px;
-  color: #bacdd9;
+    padding: 0 20px;
+    color: #bacdd9;
 
-  &__icon {
-    font-family: FontAwesome;
-    color: #e6f3fa;
-    margin-right: 4px;
-  }
-
-  &__count {
-    font-family: open_sanssemibold;
-    font-size: 16px;
-  }
-
-  &__title {
-    font-family: open_sanslight;
-    font-size: 14px;
-
-    @media (max-width: 879px) {
-      display: none;
+    &__icon {
+        font-family: FontAwesome;
+        color: #e6f3fa;
+        margin-right: 4px;
     }
-  }
 
+    &__count {
+        font-family: open_sanssemibold;
+        font-size: 16px;
+    }
 
-  @media (min-width: 320px) and (max-width: 639px) {
-    display: none;
-  }
+    &__title {
+        font-family: open_sanslight;
+        font-size: 14px;
+        @media (max-width: 879px) {
+            display: none;
+        }
+    }
+    @media (min-width: 320px) and (max-width: 639px) {
+        display: none;
+    }
 }
 
 .settings {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-
-  @media (min-width: 320px) and (max-width: 639px) {
-    display: none;
-  }
-
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @media (min-width: 320px) and (max-width: 639px) {
+        display: none;
+    }
 }
 
-.phones, .lang, .currency, .login {
+.currency,
+.lang,
+.login,
+.phones {
+    position: relative;
+    color: #FFF;
 
-  position: relative;
-  color: #FFF;
-
-  &__icon {
-    font-family: FontAwesome;
-    font-size: 18px;
-  }
-
-  &__btn {
-    box-sizing: border-box;
-    background: transparent;
-    border: 0;
-    outline: 0;
-    padding: 9px 36px 9px 15px;
-    border-radius: 3px;
-    margin-right: 3px;
-
-    &:focus {
-      background-color: #133f5c;
-      & + .dropdown {
-        display: block;
-      }
+    &__icon {
+        font-family: FontAwesome;
+        font-size: 18px;
     }
-  }
 
-  &__label {
-    font-family: open_sansregular;
-    font-size: 13px;
-  }
+    &__btn {
+        box-sizing: border-box;
+        background: transparent;
+        border: 0;
+        outline: 0;
+        padding: 9px 36px 9px 15px;
+        border-radius: 3px;
+        margin-right: 3px;
 
-  &__caret {
-    font-family: FontAwesome;
-    font-size: 13px;
-    position: absolute;
-    right: 15px;
-    top: 13px;
-  }
+        &:focus {
+            background-color: #133f5c;
 
+            & + .dropdown {
+                display: block;
+            }
+        }
+    }
+
+    &__label {
+        font-family: open_sansregular;
+        font-size: 13px;
+    }
+
+    &__caret {
+        font-family: FontAwesome;
+        font-size: 13px;
+        position: absolute;
+        right: 15px;
+        top: 13px;
+    }
 }
 
 .phones {
-
-  &__fullphone {
-    font-family: open_sanslight;
-    font-size: 15px;
-    @media (max-width: 879px) {
-      display: none;
+    &__fullphone {
+        font-family: open_sanslight;
+        font-size: 15px;
+        @media (max-width: 879px) {
+            display: none;
+        }
     }
-  }
 
-  &__label {
-    display: block;
-    font-family: open_sansregular;
-    font-size: 11px;
-    color: rgba(255,255,255, .5);
-    @media (max-width: 879px) {
-      display: none;
+    &__label {
+        display: block;
+        font-family: open_sansregular;
+        font-size: 11px;
+        color: rgba(255,255,255, .5);
+        @media (max-width: 879px) {
+            display: none;
+        }
     }
-  }
 
-  &__caret {
-    top: 21px;
-    @media (max-width: 879px) {
-      top: 13px;
+    &__caret {
+        top: 21px;
+        @media (max-width: 879px) {
+            top: 13px;
+        }
     }
-  }
-
 }
 
 .login {
-  &__btn {
-    border: 1px solid #5f8aa6;
-  }
+    &__btn {
+        border: 1px solid #5f8aa6;
+    }
 }
