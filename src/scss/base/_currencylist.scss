@@ -1,0 +1,28 @@
+.currencylist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.currencylist_item {
+    font-family: open_sansregular;
+    color: black;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 13px;
+
+    &:hover {
+        background-color: #1a587f;
+        .currencylist__name,
+        .currencylist__abbreviation {
+            color: #fff;
+        }
+    }
+}
+
+.currencylist {
+    &__abbreviation {
+        float: right;
+        color:#1a587f;
+    }
+}

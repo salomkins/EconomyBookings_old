@@ -1,0 +1,23 @@
+.languageslist--left,
+.languageslist--right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.languageslist_item {
+    font-family: open_sansregular;
+    color: black;
+    padding: 8px 20px;
+    cursor: pointer;
+    font-size: 13px;
+
+    &.selected {
+        color: #1a587f;
+    }
+
+    &:hover {
+        background-color: #1a587f;
+        color: white;
+    }
+}

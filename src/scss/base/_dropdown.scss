@@ -2,7 +2,7 @@
     display: none;
     position: absolute;
     left: 50%;
-    transform: translate(-50%,5%);
+    transform: translate(-50%,2%);
 
     &-wrapper {
         position: relative;
@@ -25,7 +25,7 @@
     &-row {
         display: flex;
         flex-direction: nowrap;
-        padding: 10px;
+        padding: 0;
     }
 }
 
@@ -34,8 +34,8 @@
     vertical-align: top;
     white-space: normal;
     font-size: 16px;
-    width: 248px;
-    padding: 0 12px;
+    width: 268px;
+    padding: 9px 5px 9px;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     margin-left: -1px;
@@ -46,5 +46,22 @@
 
     &:last-child {
         border-right: 0;
+    }
+
+    &.languages {
+        width: 118px;
+        padding: 0;
+    }
+
+    &.currency {
+        width: 220px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    &.form {
+        width: 240px;
+        padding: 20px 0;
+        text-align: center;
     }
 }
